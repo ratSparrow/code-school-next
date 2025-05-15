@@ -1,15 +1,15 @@
 // Color variables
-$blue: #3B82F6;
-$violet: #8B5CF6;
-$orange: #FB923C;
-$pink: #F472B6;
-$gray: #F3F4F6;
-$white: #FFFFFF;
+$color1: #3B82F6;
+$color2: #8B5CF6;
+$color3: #FB923C;
+$color4: #F472B6;
+$color4: #F3F4F6;
+$color5: #FFFFFF;
 
 // Gradients
-$primary-gradient: linear-gradient(90deg, $blue, $violet);
-$secondary-gradient: linear-gradient(90deg, $orange, $pink);
-$background-gradient: linear-gradient(180deg, $gray, $white);
+$primary-gradient: linear-gradient(to right, $color1, $color2);
+$secondary-gradient: linear-gradient(90deg, $color3, $color4);
+$background-gradient: linear-gradient(180deg, $color4, $color5);
 
 // Typography
 $font-family-base: 'Inter', sans-serif;

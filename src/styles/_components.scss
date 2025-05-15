@@ -1,0 +1,21 @@
+.button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  color: white;
+  font-weight: 500;
+  background-image: $primary-gradient;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.card {
+  padding: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background-color: $white;
+}

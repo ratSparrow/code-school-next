@@ -1,0 +1,29 @@
+@import "./variables.scss";
+
+.color-primary {
+    color: $color1;
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.color-secondary {
+    color: $color1;
+
+    &:hover {
+        opacity: 0.7;
+    }
+}
+
+.color-heading {
+    color: $heading-color;
+}
+
+.color-accent {
+    color: $text-color;
+}
+
+.background-gradient {
+    background: $background-gradient;
+}

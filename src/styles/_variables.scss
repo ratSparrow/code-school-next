@@ -5,10 +5,12 @@ $color3: #FB923C;
 $color4: #F472B6;
 $color4: #F3F4F6;
 $color5: #FFFFFF;
+$heading-color: #111827;
+$text-color: #374151;
 
 // Gradients
 $primary-gradient: linear-gradient(to right, $color1, $color2);
-$secondary-gradient: linear-gradient(90deg, $color3, $color4);
+$secondary-gradient: linear-gradient(to left, $color3, $color4);
 $background-gradient: linear-gradient(180deg, $color4, $color5);
 
 // Typography
@@ -21,5 +23,4 @@ $font-size-xlarge: 22px;
 $font-size-xxlarge: 24px;
 $font-size-xxxlarge: 32px;
 
-$heading-color: #111827;
-$text-color: #374151;
+

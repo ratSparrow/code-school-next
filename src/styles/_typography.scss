@@ -1,7 +1,40 @@
 @import "./variables.scss";
 
-.gradient-text {
+
+.text-small{
+    font-size: $font-size-small;
+}
+.text-base{
+    font-size: $font-size-base;
+}
+.text-medium{
+    font-size: $font-size-medium;
+}
+.text-large{
+    font-size: $font-size-large;
+}
+.text-xlarge{
+    font-size: $font-size-xlarge;
+}
+.text-xxlarge{
+    font-size: $font-size-xxlarge;
+}
+.text-xxxlarge{
+    font-size: $font-size-xxxlarge;
+}
+
+.gradient-text-primary {
     background: $primary-gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.gradient-text-secondary {
+    background: $secondary-gradient;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.gradient-text-background {
+    background: $background-gradient;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

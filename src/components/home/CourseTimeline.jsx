@@ -1,16 +1,10 @@
 import React, { Fragment } from 'react'
 import { Chrono } from 'react-chrono';
+import { courseCurriculum } from '../../utilities/fakeData';
 
 
 const CourseTimeline = () => {
-    const items = [
-        { title: "2010", cardTitle: "Started College", cardSubtitle: "Computer Science", cardDetailedText: "Learned programming." },
-        { title: "2014", cardTitle: "Graduated", cardSubtitle: "Bachelor's Degree" },
-        { title: "2010", cardTitle: "Started College", cardSubtitle: "Computer Science", cardDetailedText: "Learned programming." },
-        { title: "2014", cardTitle: "Graduated", cardSubtitle: "Bachelor's Degree" },
-        { title: "2010", cardTitle: "Started College", cardSubtitle: "Computer Science", cardDetailedText: "Learned programming." },
-        { title: "2014", cardTitle: "Graduated", cardSubtitle: "Bachelor's Degree" },
-    ];
+   
     return (
         <Fragment>
 
@@ -18,16 +12,16 @@ const CourseTimeline = () => {
                 <h2 className="text-4xl md:text-5xl font-extrabold text-gray-800 mb-6 text-center">
                    Course Timeline
                 </h2>
-                <div className="max-w-6xl mx-auto  h-[600px] overflow-y-auto">
+                <div className="max-w-6xl mx-auto h-[300px] md:h-[650px] overflow-y-auto">
                     <Chrono
-                        items={items}
+                        items={courseCurriculum}
                         mode="VERTICAL"
                         theme={{
-                            primary: "#0f172a",         // Timeline line
-                            secondary: "#38bdf8",       // Dot color
-                            cardBgColor: "#ffffff",     // Card background
-                            cardForeColor: "#0f172a",   // Text
-                            titleColor: "#0f172a",      // Date/year
+                            primary: "#FB923C",         // Timeline line
+                            secondary: "#FFFFFF",       // Dot color
+                            cardBgColor: "#F3F4F6",     // Card background
+                            cardForeColor: "#374151",   // Text
+                            titleColor: "#111827",      // Date/year
                         }}
                         cardHeight={160}
                         // hideControls

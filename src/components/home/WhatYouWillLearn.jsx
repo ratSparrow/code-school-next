@@ -5,6 +5,7 @@ import { IoLogoNodejs } from "react-icons/io";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiMui } from "react-icons/si";
 import { TbBrandFigma } from "react-icons/tb";
+import Slider from "react-slick";
 
 export default function WhatYouWillLearn() {
     const topics = [
@@ -21,6 +22,23 @@ export default function WhatYouWillLearn() {
         { icon: <BiLogoMongodb className="text-gray-700 text-6xl transition-transform duration-300 group-hover:scale-125" />, label: "MongoDB" },
         { icon: <FaServer className="text-purple-500 text-6xl transition-transform duration-300 group-hover:scale-125" />, label: "Deployment" },
     ];
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 600,
+        slidesToShow: 10,
+        slidesToScroll: 1,
+        arrows: false,
+        autoplay: true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1,
+                },
+            },
+        ],
+    };
 
     return (
         <section className="py-16 px-6 md:px-20 text-center">
@@ -30,14 +48,20 @@ export default function WhatYouWillLearn() {
             <p className="text-lg color-text mb-10 max-w-2xl mx-auto">
                 This course covers everything you need to start building responsive, modern websites from scratch.
             </p>
-            <div className="background-gradient flex justify-between items-center p-16 rounded">
-                {topics.map((topic, index) => (
-                    <div key={index} className="group flex flex-col items-center cursor-pointer">
-                        {topic.icon}
-                        <span className="mt-3 text-lg font-medium text-gray-700">{topic.label}</span>
-                    </div>
-                ))}
+            <div className="p-16">
+                <Slider {...settings}>
+                    {topics.map((topic, index) => (
+                        <div key={index} className="px-4 ">
+                            <div key={index} className="cursor-pointer">
+                                {topic.icon}
+                                <span className="mt-3 text-lg font-medium text-gray-700">{topic.label}</span>
+                            </div>
+                        </div>
+                    ))}
+                </Slider>
             </div>
+
+
             {/* Optional: Embed a walkthrough video */}
             <div className="mt-12">
                 <iframe

@@ -24,7 +24,7 @@ export function FAQSection() {
   const [openIndex, setOpenIndex] = useState(null);
 
   return (
-    <section className="bg-indigo-50 py-20 px-6 md:px-20">
+    <section className="bg-gradient-to-b from-white to-blue-50 py-20 px-6 md:px-20">
       <h2 className="text-4xl md:text-5xl font-extrabold text-center text-gray-800 mb-12">
         Frequently Asked Questions
       </h2>

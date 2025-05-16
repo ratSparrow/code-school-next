@@ -1,4 +1,3 @@
-import React from "react";
 import { BiLogoMongodb, BiLogoRedux } from "react-icons/bi";
 import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaGithub, FaServer, FaSass } from "react-icons/fa";
 import { IoLogoNodejs } from "react-icons/io";
@@ -51,10 +50,10 @@ export default function WhatYouWillLearn() {
             <div className="p-16">
                 <Slider {...settings}>
                     {topics.map((topic, index) => (
-                        <div key={index} className="px-4 ">
-                            <div key={index} className="cursor-pointer">
-                                {topic.icon}
-                                <span className="mt-3 text-lg font-medium text-gray-700">{topic.label}</span>
+                        <div key={index} className="">
+                            <div key={index} className="flex flex-col items-center justify-center cursor-pointer">
+                                <h1>{topic.icon}</h1>
+                                <h5 className="mt-5 text-lg font-medium text-gray-700">{topic.label}</h5>
                             </div>
                         </div>
                     ))}
@@ -62,8 +61,7 @@ export default function WhatYouWillLearn() {
             </div>
 
 
-            {/* Optional: Embed a walkthrough video */}
-            <div className="mt-12">
+            {/* <div className="mt-12">
                 <iframe
                     className="w-full max-w-2xl aspect-video mx-auto rounded-xl shadow-lg"
                     src="https://www.youtube.com/embed/dQw4w9WgXcQ"
@@ -71,7 +69,7 @@ export default function WhatYouWillLearn() {
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullScreen
                 ></iframe>
-            </div>
+            </div> */}
         </section>
     );
 }

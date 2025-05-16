@@ -1,7 +1,25 @@
 import React from "react";
 import { FaClock, FaVideo, FaProjectDiagram, FaChalkboardTeacher, FaCertificate, FaInfinity, FaHeadset } from "react-icons/fa";
+import Slider from "react-slick";
 
 export default function CourseFeatures() {
+    const settings = {
+        dots: false,
+        infinite: true,
+        speed: 600,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        arrows: false,
+        autoplay: true,
+        responsive: [
+            {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 1,
+                },
+            },
+        ],
+    };
     const features = [
         {
             icon: <FaClock className="text-blue-600 text-4xl group-hover:scale-110 transition-transform duration-300" />,
@@ -24,7 +42,7 @@ export default function CourseFeatures() {
             title: "Video Records",
             description: "Engaging, beginner-friendly video records covering for live class practice."
         },
-         {
+        {
             icon: <FaHeadset className="text-indigo-500 text-4xl group-hover:scale-110 transition-transform duration-300" />,
             title: "Support Sessions",
             description: "Get help via community Facebook & WhatsApp group."
@@ -39,7 +57,7 @@ export default function CourseFeatures() {
             title: "Certificate of Completion",
             description: "Receive a professional certificate after finishing the course."
         },
-       
+
     ];
 
     return (
@@ -50,19 +68,21 @@ export default function CourseFeatures() {
             <p className="text-lg md:text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
                 Everything you need to succeed — from lessons and projects to lifetime access and community support.
             </p>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
-                {features.map((feature, index) => (
-                    <div
-                        key={index}
-                        className="group bg-blue-50 rounded-2xl shadow-lg p-8 hover:shadow-2xl transition-all duration-300 border border-blue-100 hover:border-blue-300"
-                    >
-                        <div className="mb-4 flex justify-center">
-                            {feature.icon}
+            <div className="">
+                <Slider {...settings}>
+                    {features.map((feature, index) => (
+                        <div key={index} className="px-4">
+                            <div className="bg-blue-50 rounded-2xl shadow-lg p-8 hover:shadow-2xl transition-all duration-300 border border-blue-100 hover:border-blue-300 h-[200px]">
+                                <div className="mb-4 flex justify-center">
+                                    {feature.icon}
+                                </div>
+                                <h3 className="text-xl font-semibold text-gray-800 mb-2">{feature.title}</h3>
+                                <p className="text-gray-600 text-sm leading-relaxed">{feature.description}</p>
+                            </div>
                         </div>
-                        <h3 className="text-xl font-semibold text-gray-800 mb-2">{feature.title}</h3>
-                        <p className="text-gray-600 text-sm leading-relaxed">{feature.description}</p>
-                    </div>
-                ))}
+                    ))}
+                </Slider>
+
             </div>
         </section>
     );

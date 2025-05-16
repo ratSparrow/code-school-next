@@ -16,7 +16,7 @@ const CourseTimeline = () => {
 
             <section className="bg-gradient-to-b from-slate-50 to-slate-200 py-12 px-4 sm:px-6 lg:px-8 rounded-2xl shadow-xl">
                 <h2 className="text-4xl md:text-5xl font-extrabold text-gray-800 mb-6 text-center">
-                   Course Curriculum
+                   Course Timeline
                 </h2>
                 <div className="max-w-6xl mx-auto  h-[600px] overflow-y-auto">
                     <Chrono

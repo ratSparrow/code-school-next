@@ -8,6 +8,7 @@ import InstructorSection from '../../components/home/InstructorSection'
 import { Testimonial } from '../../components/home/Testimonial'
 import { Pricing } from '../../components/home/Pricing'
 import { FAQSection } from '../../components/home/FAQSection'
+import ProjectSyllabus from '../../components/home/ProjectSyllabus'
 
 const Homepage = () => {
   return (
@@ -17,6 +18,7 @@ const Homepage = () => {
       <WhoThisCourseIsFor />
       <CourseFeatures />
       <CourseTimeline />
+      <ProjectSyllabus/>
       <InstructorSection/>
       {/* <Testimonial/> */}
       <Pricing/>

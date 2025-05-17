@@ -8,11 +8,11 @@ const CourseTimeline = () => {
     return (
         <Fragment>
 
-            <section id="timeline" className="bg-gradient-to-b from-white to-blue-50 py-12 px-4 sm:px-6 lg:px-8 rounded-2xl shadow-xl">
+            <section id="timeline" className="">
                 <h2 className="text-4xl md:text-5xl font-extrabold text-gray-800 mb-6 text-center">
                    Course Timeline
                 </h2>
-                <div className="max-w-6xl mx-auto h-[300px] md:h-[650px] overflow-y-auto">
+                <div className="max-w-5xl mx-auto h-[300px] md:h-[650px] overflow-y-auto">
                     <Chrono
                         items={courseCurriculum}
                         mode="VERTICAL"

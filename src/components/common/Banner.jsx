@@ -4,7 +4,7 @@ import reactBanner from "../../assets/images/banner/react-banner.png"
 
 export default function Banner() {
   return (
-    <section className="relative py-16 px-6 md:px-20 text-center z-50">
+    <section className="relative py-16 px-6 md:px-20 text-center ">
       <div className="max-w-4xl mx-auto">
         <h1 className="color-heading text-4xl md:text-6xl font-bold mb-6 leading-snug">
           Launch Your Career as a Full Stack Developer

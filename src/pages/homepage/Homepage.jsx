@@ -13,7 +13,6 @@ import ProjectSyllabus from '../../components/home/ProjectSyllabus'
 const Homepage = () => {
   return (
     <Fragment>
-
       <WhatYouWillLearn />
       <WhoThisCourseIsFor />
       <CourseFeatures />

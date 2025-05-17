@@ -9,10 +9,16 @@
   cursor: pointer;
   transition: 0.3s ease;
 
+  
+  -secondary{
+    background-image: $secondary-gradient;
+  }
+
   &:hover {
     opacity: 0.9;
   }
 }
+
 
 .card {
   padding: 1rem;

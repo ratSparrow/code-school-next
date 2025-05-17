@@ -1,5 +1,5 @@
 import  { Fragment } from 'react'
-import Banner from '../../components/common/Banner'
+
 import WhatYouWillLearn from '../../components/home/WhatYouWillLearn'
 import WhoThisCourseIsFor from '../../components/home/WhoThisCourseIsFor'
 import CourseFeatures from '../../components/home/CourseFeatures'
@@ -13,7 +13,7 @@ import ProjectSyllabus from '../../components/home/ProjectSyllabus'
 const Homepage = () => {
   return (
     <Fragment>
-      <Banner />
+
       <WhatYouWillLearn />
       <WhoThisCourseIsFor />
       <CourseFeatures />

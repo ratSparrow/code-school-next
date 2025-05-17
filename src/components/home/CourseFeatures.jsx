@@ -61,7 +61,7 @@ export default function CourseFeatures() {
     ];
 
     return (
-        <section className="bg-white py-20 px-6 md:px-20 text-center">
+        <section id="features" className="bg-white py-20 px-6 md:px-20 text-center">
             <h2 className="text-4xl md:text-5xl font-extrabold text-gray-800 mb-6">
                 Course Features
             </h2>

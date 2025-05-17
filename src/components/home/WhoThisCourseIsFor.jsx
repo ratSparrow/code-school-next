@@ -21,7 +21,7 @@ export default function WhoThisCourseIsFor() {
   ];
 
   return (
-    <section className="bg-gradient-to-b from-white to-blue-50 py-20 px-6 md:px-20 text-center">
+    <section id="whoisfor" className="bg-gradient-to-b from-white to-blue-50 py-20 px-6 md:px-20 text-center">
       <h2 className="text-4xl md:text-5xl font-extrabold text-gray-800 mb-6">
         Who This Course Is For
       </h2>

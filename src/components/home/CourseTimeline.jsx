@@ -8,7 +8,7 @@ const CourseTimeline = () => {
     return (
         <Fragment>
 
-            <section className="bg-gradient-to-b from-white to-blue-50 py-12 px-4 sm:px-6 lg:px-8 rounded-2xl shadow-xl">
+            <section id="timeline" className="bg-gradient-to-b from-white to-blue-50 py-12 px-4 sm:px-6 lg:px-8 rounded-2xl shadow-xl">
                 <h2 className="text-4xl md:text-5xl font-extrabold text-gray-800 mb-6 text-center">
                    Course Timeline
                 </h2>

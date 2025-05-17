@@ -23,7 +23,7 @@ const ProjectSyllabus = () => {
   };
 
   return (
-    <div className="w-full mx-auto px-4 py-20 ">
+    <div id="projects" className="w-full mx-auto px-4 py-20 ">
       <h2 className="text-4xl md:text-5xl font-extrabold text-gray-800 py-10 text-center">Project You'll Grab</h2>
       <Slider {...settings}>
         {projectSyllabus.map((project, index) => (

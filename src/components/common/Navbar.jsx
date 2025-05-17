@@ -18,6 +18,19 @@ export default function Navbar() {
             {label}
         </Link>
     );
+    const renderAnchors = (path, label) => (
+        <a
+            href={path}
+            className={`py-2 px-1 inline-flex items-center gap-2 border-b-[2px] whitespace-nowrap 
+        ${location.pathname === path
+                    ? "font-normal border-[#8B5CF6] gradient-text-primary"
+                    : "border-transparent text-defaulttextcolor hover:text-blue-700"
+                }`}
+            onClick={() => setIsOpen(false)}
+        >
+            {label}
+        </a>
+    );
 
     return (
         <nav className="w-full py-2">
@@ -35,9 +48,15 @@ export default function Navbar() {
                     {/* Desktop Menu */}
                     <div className="hidden md:flex space-x-8">
                         {renderLink("/", "Home")}
-                        {renderLink("/about", "About")}
-                        {renderLink("/services", "Services")}
-                        {renderLink("/contact", "Contact")}
+                        {renderAnchors("#whatyoulearn", "What You Learn")}
+                        {renderAnchors("#whoisfor", "Who Is For")}
+                        {renderAnchors("#features", "Features")}
+                        {renderAnchors("#timeline", "Timeline")}
+                        {renderAnchors("#projects", "Projects")}
+                        {renderAnchors("#instrctor", "Instructor")}
+                        {renderAnchors("#pricing", "Pricing")}
+                        {renderAnchors("#faq", "FAQ")}
+
                     </div>
 
                     {/* Mobile Menu Button */}
@@ -57,9 +76,14 @@ export default function Navbar() {
                 <div className="md:hidden bg-white shadow-md">
                     <div className="px-2 pt-2 pb-3 space-y-1">
                         {renderLink("/", "Home")}
-                        {renderLink("/about", "About")}
-                        {renderLink("/services", "Services")}
-                        {renderLink("/contact", "Contact")}
+                        {renderAnchors("#whatyoulearn", "What You Learn")}
+                        {renderAnchors("#whoisfor", "Who Is For")}
+                        {renderAnchors("#features", "Features")}
+                        {renderAnchors("#timeline", "Timeline")}
+                        {renderAnchors("#projects", "Projects")}
+                        {renderAnchors("#instrctor", "Instructor")}
+                        {renderAnchors("#pricing", "Pricing")}
+                        {renderAnchors("#faq", "FAQ")}
                     </div>
                 </div>
             )}

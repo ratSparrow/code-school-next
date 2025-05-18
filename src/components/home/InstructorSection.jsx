@@ -5,7 +5,7 @@ import profilePhoto from "../../assets/images/others/rafi.jpg"
 export default function InstructorSection() {
   return (
     <section id="instrctor" className="bg-white py-20 px-6 md:px-20">
-      <h2 className="text-4xl md:text-5xl font-extrabold text-center text-gray-800 mb-12">
+      <h2 className="text-3xl md:text-5xl font-extrabold text-center text-gray-800 mb-12">
         Meet Your Instructor
       </h2>
       <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-10 items-center">

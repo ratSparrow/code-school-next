@@ -42,16 +42,17 @@ export default function WhatYouWillLearn() {
     return (
         <section id="whatyoulearn" className="py-16 px-6 text-center">
             <h2 className="text-3xl md:text-4xl font-bold color-heading mb-6">
-                What You’ll Learn
+                আপনি যা শিখবেন
             </h2>
             <p className="text-lg color-text mb-10 max-w-2xl mx-auto">
-                This course covers everything you need to start building responsive, modern websites from scratch.
+                এই কোর্সে আপনি শিখবেন কিভাবে একদম শুরু থেকে রেসপন্সিভ ও মডার্ন ওয়েবসাইট তৈরি করতে হয়।
+                HTML, CSS, JavaScript, React, Git, এবং Deployment সহ পুরো Frontend জার্নির জন্য যা যা প্রয়োজন — সবই রয়েছে এখানে।
             </p>
             <div className="py-16 px-8">
                 <Slider {...settings}>
                     {topics.map((topic, index) => (
                         <div key={index} className="">
-                            <div key={index} className="flex flex-col items-center justify-center cursor-pointer">
+                            <div className="flex flex-col items-center justify-center cursor-pointer">
                                 <h1>{topic.icon}</h1>
                                 <h5 className="mt-5 text-lg font-medium text-gray-700">{topic.label}</h5>
                             </div>
@@ -59,17 +60,6 @@ export default function WhatYouWillLearn() {
                     ))}
                 </Slider>
             </div>
-
-
-            {/* <div className="mt-12">
-                <iframe
-                    className="w-full max-w-2xl aspect-video mx-auto rounded-xl shadow-lg"
-                    src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                    title="Course Walkthrough"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                ></iframe>
-            </div> */}
         </section>
     );
 }

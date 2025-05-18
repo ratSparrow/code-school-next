@@ -1,7 +1,7 @@
 export function Pricing() {
   return (
     <section id="pricing" className="bg-white py-20 px-6 md:px-20">
-      <h2 className="text-4xl md:text-5xl font-extrabold text-center text-gray-800 mb-12">
+      <h2 className="text-3xl md:text-5xl font-extrabold text-center text-gray-800 mb-12">
         Pricing & Enrollment
       </h2>
       <div className="max-w-3xl mx-auto text-center bg-indigo-50 rounded-xl p-10 shadow-lg">

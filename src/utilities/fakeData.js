@@ -1,3 +1,8 @@
+import expenseTracker from "../assets/images/projects/expense-tracker.png"
+import ecommerce from "../assets/images/projects/ecommerce.png"
+import employee from "../assets/images/projects/employee-management.png"
+import quiz from "../assets/images/projects/quiz.png"
+import todo from "../assets/images/projects/todo.png"
 export const courseCurriculum = [
   {
     title: "Week 1",
@@ -132,7 +137,7 @@ export const courseCurriculum = [
 export const projectSyllabus = [
     {
         title: "Expense Tracker",
-        thumbnail: "/images/expense-tracker.png",  // Replace with your actual image path
+        thumbnail: expenseTracker,  // Replace with your actual image path
         overview: "A personal finance tracker to monitor income and expenses.",
         outcomes: [
             "React state with useState and useEffect",
@@ -151,7 +156,7 @@ export const projectSyllabus = [
     },
     {
         title: "Quiz App",
-        thumbnail: "/images/quiz-app.png",
+        thumbnail: quiz,
         overview: "An interactive quiz game with multiple choice questions.",
         outcomes: [
             "Routing with React Router",
@@ -170,7 +175,7 @@ export const projectSyllabus = [
     },
     {
         title: "To-Do Application",
-        thumbnail: "/images/todo-app.png",
+        thumbnail: todo,
         overview: "A classic CRUD app to manage daily tasks.",
         outcomes: [
             "Controlled form inputs",
@@ -187,7 +192,7 @@ export const projectSyllabus = [
     },
     {
         title: "E-commerce App",
-        thumbnail: "/images/ecommerce-app.png",
+        thumbnail: ecommerce,
         overview: "A minimal e-commerce frontend with product listings and cart.",
         outcomes: [
             "Routing and dynamic pages",
@@ -210,7 +215,7 @@ export const projectSyllabus = [
     },
     {
         title: "Employee Management App",
-        thumbnail: "/images/employee-management.png",
+        thumbnail: employee,
         overview: "A CRUD app to manage employee records with backend integration.",
         outcomes: [
             "Full CRUD with backend API",

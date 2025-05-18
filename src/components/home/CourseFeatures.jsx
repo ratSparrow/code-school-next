@@ -62,11 +62,13 @@ export default function CourseFeatures() {
 
     return (
         <section id="features" className="bg-white py-20 px-6 md:px-20 text-center">
-            <h2 className="text-4xl md:text-5xl font-extrabold text-gray-800 mb-6">
-                Course Features
+            <h2 className="text-3xl md:text-5xl font-extrabold text-gray-800 mb-6">
+                কোর্স ফিচারস
             </h2>
             <p className="text-lg md:text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
-                Everything you need to succeed — from lessons and projects to lifetime access and community support.
+                এই কোর্সে রয়েছে সফলতার জন্য প্রয়োজনীয় সব উপাদান —
+                সু-সংগঠিত লেসন, হাতে-কলমে প্রজেক্ট, আজীবন কোর্স অ্যাক্সেস,
+                এবং শিক্ষার্থী কমিউনিটির সহায়তা — সবকিছু এক জায়গায়।
             </p>
             <div className="">
                 <Slider {...settings}>

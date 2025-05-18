@@ -24,11 +24,14 @@ const ProjectSyllabus = () => {
 
   return (
     <div id="projects" className="w-full mx-auto px-4 py-20 ">
-      <h2 className="text-4xl md:text-5xl font-extrabold text-gray-800 py-10 text-center">Project You'll Grab</h2>
+      <h2 className="text-3xl md:text-5xl font-extrabold text-gray-800 mb-6 text-center pt-16">আপনি যেসব প্রজেক্ট করবেন</h2>
+      <p className="text-lg md:text-xl text-gray-600 mb-12 max-w-2xl mx-auto text-center mb-8">
+        ক্লাসের প্রতিটি ধাপে হাতে-কলমে তৈরি করবেন বাস্তবভিত্তিক প্রজেক্ট, যা আপনার প্রোফাইলকে করবে আরও শক্তিশালী।
+      </p>
       <Slider {...settings}>
         {projectSyllabus.map((project, index) => (
           <div key={index} className="px-4 ">
-            <div className="bg-white shadow-md rounded-2xl overflow-hidden border border-gray-200 h-[650px] flex flex-col justify-between" >
+            <div className="bg-white shadow-md rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-blue-200 h-[650px] flex flex-col justify-between" >
               <img
                 src={project.thumbnail}
                 alt={project.title}

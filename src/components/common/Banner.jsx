@@ -41,34 +41,31 @@ export default function Banner() {
 
   return (
     <section id="banner" className="w-full md:w-[1200px] mx-auto grid grid-cols-1 md:grid-cols-2 py-8 md:py-16">
-
-
       <div className="mx-2">
-        <h1 className="text-center md:text-start text-3xl md:text-5xl font-bold mb-4 gradient-text-primary" style={{ lineHeight: "1.6" }}>
+        <h1 className="text-center md:text-start text-2xl md:text-5xl font-bold mb-2 md:mb-4 gradient-text-primary" style={{ lineHeight: "1.6" }}>
           বাংলায় কোডিং শিখুন, গড়ুন আপনার আইটি ক্যারিয়ার — একদম  শুরু থেকে
         </h1>
-        <p className="text-md md:text-lg color-accent mb-4 text-center md:text-start">
+        <p className="text-sm md:text-lg color-accent mb-4 text-center md:text-start">
           শুরু করুন শূন্য থেকে, হয়ে উঠুন ফুল-স্ট্যাক ডেভেলপার — বাংলায় শেখা, আপনার মতো শিক্ষার্থীদের জন্য।
         </p>
         <div className="flex gap-4 items-center justify-center md:justify-start">
           <a target="_blank" href="https://forms.gle/4LoKrvCZZSwhHXj67">
-            <button className="button text-lg px-6 py-3 rounded-2xl bg-blue-600 ">
+            <button className="button text-sm md:text-lg px-4 md:px-6 py-3 md:py-3 rounded-2xl">
               এখনই ভর্তি হোন
             </button>
           </a>
           <a target="_blank" href="https://forms.gle/4LoKrvCZZSwhHXj67">
-            <button className="button text-lg px-6 py-3 rounded-2xl bg-blue-600 ">
+            <button className="button text-sm md:text-lg px-4 md:px-6 py-3 md:py-3 rounded-2xl">
               বিস্তারিত জানুন
             </button>
           </a>
         </div>
       </div>
 
-
       <div className="mx-2">
         <Slider {...settings}>
           {banners.map((img, index) => (
-            <div key={index} className="mt-4 md:mt-4">
+            <div key={index} className="mt-4 md:mt-0">
               <div> <img
                 src={img.value}
                 alt="Course Illustration"
@@ -77,11 +74,7 @@ export default function Banner() {
             </div>
           ))}
         </Slider>
-
       </div>
-
-
-
     </section>
   );
 }

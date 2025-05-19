@@ -4,10 +4,11 @@
   border-radius: 0.5rem;
   color: white;
   font-weight: 500;
-  background-image: $primary-gradient;
+  background: $primary-gradient;
   border: none;
   cursor: pointer;
   transition: 0.3s ease;
+  opacity: 1;
 
   
   -secondary{
@@ -15,7 +16,7 @@
   }
 
   &:hover {
-    opacity: 0.9;
+    opacity: 0.8;
   }
 }
 

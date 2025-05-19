@@ -3,6 +3,14 @@ import ecommerce from "../assets/images/projects/ecommerce.png"
 import employee from "../assets/images/projects/employee-management.png"
 import quiz from "../assets/images/projects/quiz.png"
 import todo from "../assets/images/projects/todo.png"
+import { BiLogoMongodb, BiLogoRedux } from "react-icons/bi";
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaGithub, FaServer, FaSass } from "react-icons/fa";
+import { IoLogoNodejs } from "react-icons/io";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { SiMui } from "react-icons/si";
+import { TbBrandFigma } from "react-icons/tb";
+
+
 export const courseCurriculum = [
   {
     title: "Week 1",
@@ -132,7 +140,20 @@ export const courseCurriculum = [
   },
 ];
 
-
+export  const whatYouLearnTopics = [
+        { icon: <FaHtml5 className="text-orange-500 text-6xl transition-transform duration-300 group-hover:scale-125" />, label: "HTML5" },
+        { icon: <FaCss3Alt className="text-blue-500 text-6xl transition-transform duration-300 group-hover:scale-125" />, label: "CSS3" },
+        { icon: <TbBrandFigma className="text-blue-500 text-6xl transition-transform duration-300 group-hover:scale-125" />, label: "Figma to HTML" },
+        { icon: <RiTailwindCssFill className="text-blue-500 text-6xl transition-transform duration-300 group-hover:scale-125" />, label: "Tailwind" },
+        { icon: <FaGithub className="text-gray-700 text-6xl transition-transform duration-300 group-hover:scale-125" />, label: "Git & GitHub" },
+        { icon: <FaJs className="text-yellow-400 text-6xl transition-transform duration-300 group-hover:scale-125" />, label: "JavaScript" },
+        { icon: <FaReact className="text-cyan-500 text-6xl transition-transform duration-300 group-hover:scale-125" />, label: "React" },
+        { icon: <SiMui className="text-cyan-500 text-6xl transition-transform duration-300 group-hover:scale-125" />, label: "Material React" },
+        { icon: <BiLogoRedux className="text-cyan-500 text-6xl transition-transform duration-300 group-hover:scale-125" />, label: "Redux" },
+        { icon: <IoLogoNodejs className="text-gray-700 text-6xl transition-transform duration-300 group-hover:scale-125" />, label: "Node Js" },
+        { icon: <BiLogoMongodb className="text-gray-700 text-6xl transition-transform duration-300 group-hover:scale-125" />, label: "MongoDB" },
+        { icon: <FaServer className="text-purple-500 text-6xl transition-transform duration-300 group-hover:scale-125" />, label: "Deployment" },
+    ];
 
 export const projectSyllabus = [
     {

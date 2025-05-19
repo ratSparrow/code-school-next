@@ -33,8 +33,8 @@ export default function Navbar() {
     );
 
     return (
-        <nav className="w-full py-2">
-            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <nav className="w-full py-2 secondary-gradient-background" >
+            <div className="w-full mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex justify-between items-center">
                     {/* Logo */}
                     <Link to="/">
@@ -47,16 +47,15 @@ export default function Navbar() {
 
                     {/* Desktop Menu */}
                     <div className="hidden md:flex space-x-8">
-                        {renderLink("/", "Home")}
-                        {renderAnchors("#whatyoulearn", "What You Learn")}
-                        {renderAnchors("#whoisfor", "Who Is For")}
-                        {renderAnchors("#features", "Features")}
-                        {renderAnchors("#timeline", "Timeline")}
-                        {renderAnchors("#projects", "Projects")}
-                        {renderAnchors("#instrctor", "Instructor")}
-                        {renderAnchors("#pricing", "Pricing")}
-                        {renderAnchors("#faq", "FAQ")}
-
+                        {renderLink("/", "হোম")}
+                        {renderAnchors("#whatyoulearn", "আপনি যা শিখবেন")}
+                        {renderAnchors("#whoisfor", "এই কোর্স কার জন্য")}
+                        {renderAnchors("#features", "কোর্স ফিচারসমূহ")}
+                        {renderAnchors("#timeline", "কোর্স টাইমলাইন")}
+                        {renderAnchors("#projects", "প্রজেক্টসমূহ")}
+                        {renderAnchors("#instructor", "মেন্টর")}
+                        {renderAnchors("#pricing", "মূল্য ও ভর্তি")}
+                        {renderAnchors("#faq", "প্রশ্নোত্তর")}
                     </div>
 
                     {/* Mobile Menu Button */}
@@ -75,15 +74,15 @@ export default function Navbar() {
             {isOpen && (
                 <div className="md:hidden bg-white shadow-md">
                     <div className="px-2 pt-2 pb-3 space-y-1">
-                        {renderLink("/", "Home")}
-                        {renderAnchors("#whatyoulearn", "What You Learn")}
-                        {renderAnchors("#whoisfor", "Who Is For")}
-                        {renderAnchors("#features", "Features")}
-                        {renderAnchors("#timeline", "Timeline")}
-                        {renderAnchors("#projects", "Projects")}
-                        {renderAnchors("#instrctor", "Instructor")}
-                        {renderAnchors("#pricing", "Pricing")}
-                        {renderAnchors("#faq", "FAQ")}
+                        {renderLink("/", "হোম")}
+                        {renderAnchors("#whatyoulearn", "আপনি যা শিখবেন")}
+                        {renderAnchors("#whoisfor", "এই কোর্স কার জন্য")}
+                        {renderAnchors("#features", "কোর্স ফিচারসমূহ")}
+                        {renderAnchors("#timeline", "কোর্স টাইমলাইন")}
+                        {renderAnchors("#projects", "প্রজেক্টসমূহ")}
+                        {renderAnchors("#instructor", "মেন্টর")}
+                        {renderAnchors("#pricing", "মূল্য ও ভর্তি")}
+                        {renderAnchors("#faq", "প্রশ্নোত্তর")}
                     </div>
                 </div>
             )}

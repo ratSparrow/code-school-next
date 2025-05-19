@@ -40,11 +40,11 @@ export default function WhatYouWillLearn() {
     };
 
     return (
-        <section id="whatyoulearn" className="py-16 px-6 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold color-heading mb-6">
+        <section id="whatyoulearn" className="text-center">
+            <h2 className="text-3xl md:text-4xl font-bold color-heading mb-6 pt-8 gradient-text-primary">
                 আপনি যা শিখবেন
             </h2>
-            <p className="text-lg color-text mb-10 max-w-2xl mx-auto">
+            <p className="text-md md:text-lg color-text mb-10 max-w-2xl mx-auto">
                 এই কোর্সে আপনি শিখবেন কিভাবে একদম শুরু থেকে রেসপন্সিভ ও মডার্ন ওয়েবসাইট তৈরি করতে হয়।
                 HTML, CSS, JavaScript, React, Git, এবং Deployment সহ পুরো Frontend জার্নির জন্য যা যা প্রয়োজন — সবই রয়েছে এখানে।
             </p>

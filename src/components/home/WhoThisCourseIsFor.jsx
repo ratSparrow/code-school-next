@@ -22,10 +22,10 @@ export default function WhoThisCourseIsFor() {
 
   return (
     <section id="whoisfor" className="bg-gradient-to-b from-white to-blue-50 py-20 px-6 md:px-20 text-center">
-      <h2 className="text-3xl md:text-5xl font-extrabold text-gray-800 mb-6">
+      <h2 className="text-3xl md:text-4xl font-extrabold mb-6 gradient-text-primary">
         এই কোর্স কার জন্য?
       </h2>
-      <p className="text-lg md:text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
+      <p className="text-md md:text-lg color-accent mb-12 max-w-2xl mx-auto">
         আপনি যদি একদম নতুন হন, আগে কখনও কোড না লিখে থাকেন, অথবা ফ্রিল্যান্সিং ক্যারিয়ার শুরু করতে চান — এই কোর্সটি আপনার জন্যই তৈরি।
       </p>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-10 max-w-6xl mx-auto">
@@ -37,8 +37,8 @@ export default function WhoThisCourseIsFor() {
             <div className="mb-4 flex justify-center">
               {item.icon}
             </div>
-            <h3 className="text-2xl font-semibold text-gray-800 mb-2">{item.title}</h3>
-            <p className="text-gray-600 text-base leading-relaxed">{item.description}</p>
+            <h3 className="color-heading text-xl font-semibold mb-2">{item.title}</h3>
+            <p className="color-accent text-base leading-relaxed">{item.description}</p>
           </div>
         ))}
       </div>

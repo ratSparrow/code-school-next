@@ -1,38 +1,63 @@
+import React from "react";
+import { FaFacebook, FaLinkedin, FaGithub } from "react-icons/fa";
+import { Mail, Phone } from "lucide-react";
 
-import { FaEnvelope, FaFacebookF, FaTwitter, FaYoutube } from "react-icons/fa";
-import { Link } from "react-router";
-
-function Footer() {
+export default function Footer() {
   return (
-    <footer className="primary-gradient-background text-white py-12 px-6 md:px-20">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+    <footer className="bg-gray-900 text-white py-12">
+      <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+        {/* Brand */}
         <div>
-          <h3 className="text-xl font-bold mb-3">Code School Hub</h3>
-          <p className="text-white">Empowering Bangladesh through modern tech education.</p>
+          <h2 className="text-2xl font-bold mb-4">Code in Bangla</h2>
+          <p className="text-gray-400">
+            বাংলায় প্রোগ্রামিং শেখা এখন সহজ। বাস্তব প্রজেক্ট, প্র্যাকটিকাল স্কিলস এবং কমিউনিটির মাধ্যমে ক্যারিয়ার গড়ুন।
+          </p>
         </div>
+
+        {/* Quick Links */}
         <div>
-          <h4 className="text-lg font-semibold mb-2">Contact</h4>
-          <p className="text-white flex items-center gap-2"><FaEnvelope /> support@codeschoolnext.com</p>
+          <h3 className="text-xl font-semibold mb-4">দ্রুত লিঙ্ক</h3>
+          <ul className="space-y-2 text-gray-300">
+            <li><a href="#timeline" className="hover:text-white">কোর্স পরিচিতি</a></li>
+            <li><a href="#projects" className="hover:text-white">প্রজেক্টসমূহ</a></li>
+            <li><a href="#instructor" className="hover:text-white">মেন্টর</a></li>
+            <li><a href="#banner" className="hover:text-white">ভর্তি</a></li>
+          </ul>
         </div>
+
+        {/* Contact Info */}
         <div>
-          <h4 className="text-lg font-semibold mb-2">Follow Us</h4>
-          <div className="flex gap-4">
-            <Link to="/" className="text-white hover:text-white"><FaFacebookF /></Link>
-            <Link to="/" className="text-white hover:text-white"><FaTwitter /></Link>
-            <Link to="/" className="text-white hover:text-white"><FaYoutube /></Link>
+          <h3 className="text-xl font-semibold mb-4">যোগাযোগ</h3>
+          <ul className="text-gray-300 space-y-2">
+            <li className="flex items-center gap-2">
+              <Mail size={18} /> codeinbangla@gmail.com
+            </li>
+            <li className="flex items-center gap-2">
+              <Phone size={18} /> +880-1XXX-XXXXXX
+            </li>
+          </ul>
+        </div>
+
+        {/* Social Links */}
+        <div>
+          <h3 className="text-xl font-semibold mb-4">আমাদের অনুসরণ করুন</h3>
+          <div className="flex space-x-4">
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+              <FaFacebook className="text-2xl hover:text-blue-500" />
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <FaLinkedin className="text-2xl hover:text-blue-400" />
+            </a>
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer">
+              <FaGithub className="text-2xl hover:text-gray-400" />
+            </a>
           </div>
         </div>
       </div>
-      <div className="mt-10 border-t border-gray-700 pt-6 text-center text-gray-400 text-sm">
-        <p>© {new Date().getFullYear()} Code School Hub. All rights reserved.</p>
-        <div className="mt-2 space-x-4">
-          <Link to="/" className="hover:underline">Terms</Link>
-          <Link to="/" className="hover:underline">Privacy</Link>
-          <Link to="/" className="hover:underline">Refund Policy</Link>
-        </div>
+
+      <div className="mt-12 text-center text-gray-500 text-sm border-t border-gray-700 pt-6">
+        © {new Date().getFullYear()} Code in Bangla. All rights reserved.
       </div>
     </footer>
   );
 }
-
-export default Footer

@@ -17,7 +17,7 @@ export default function WhoThisCourseIsFor() {
         {audience.map((item, index) => (
           <div
             key={index}
-            className="group bg-white rounded-2xl shadow-xl p-8 hover:shadow-2xl transition-all duration-300 border border-gray-100 hover:border-blue-200"
+            className="bg-blue-50 rounded-2xl shadow-lg p-8 hover:shadow-2xl transition-all duration-300 border border-blue-100 hover:border-blue-300"
           >
             <div className="mb-4 flex justify-center">
               {item.icon}

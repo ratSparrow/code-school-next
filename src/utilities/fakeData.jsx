@@ -9,6 +9,7 @@ import { IoLogoNodejs } from "react-icons/io";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiMui } from "react-icons/si";
 import { TbBrandFigma } from "react-icons/tb";
+import { FaClock, FaVideo, FaProjectDiagram, FaChalkboardTeacher, FaCertificate, FaInfinity, FaHeadset } from "react-icons/fa";
 
 
 export const courseCurriculum = [
@@ -140,134 +141,174 @@ export const courseCurriculum = [
   },
 ];
 
-export  const whatYouLearnTopics = [
-        { icon: <FaHtml5 className="text-orange-500 text-6xl transition-transform duration-300 group-hover:scale-125" />, label: "HTML5" },
-        { icon: <FaCss3Alt className="text-blue-500 text-6xl transition-transform duration-300 group-hover:scale-125" />, label: "CSS3" },
-        { icon: <TbBrandFigma className="text-blue-500 text-6xl transition-transform duration-300 group-hover:scale-125" />, label: "Figma to HTML" },
-        { icon: <RiTailwindCssFill className="text-blue-500 text-6xl transition-transform duration-300 group-hover:scale-125" />, label: "Tailwind" },
-        { icon: <FaGithub className="text-gray-700 text-6xl transition-transform duration-300 group-hover:scale-125" />, label: "Git & GitHub" },
-        { icon: <FaJs className="text-yellow-400 text-6xl transition-transform duration-300 group-hover:scale-125" />, label: "JavaScript" },
-        { icon: <FaReact className="text-cyan-500 text-6xl transition-transform duration-300 group-hover:scale-125" />, label: "React" },
-        { icon: <SiMui className="text-cyan-500 text-6xl transition-transform duration-300 group-hover:scale-125" />, label: "Material React" },
-        { icon: <BiLogoRedux className="text-cyan-500 text-6xl transition-transform duration-300 group-hover:scale-125" />, label: "Redux" },
-        { icon: <IoLogoNodejs className="text-gray-700 text-6xl transition-transform duration-300 group-hover:scale-125" />, label: "Node Js" },
-        { icon: <BiLogoMongodb className="text-gray-700 text-6xl transition-transform duration-300 group-hover:scale-125" />, label: "MongoDB" },
-        { icon: <FaServer className="text-purple-500 text-6xl transition-transform duration-300 group-hover:scale-125" />, label: "Deployment" },
-    ];
+export const whatYouLearnTopics = [
+  { icon: <FaHtml5 className="text-orange-500 text-6xl transition-transform duration-300 group-hover:scale-125" />, label: "HTML5" },
+  { icon: <FaCss3Alt className="text-blue-500 text-6xl transition-transform duration-300 group-hover:scale-125" />, label: "CSS3" },
+  { icon: <TbBrandFigma className="text-blue-500 text-6xl transition-transform duration-300 group-hover:scale-125" />, label: "Figma to HTML" },
+  { icon: <RiTailwindCssFill className="text-blue-500 text-6xl transition-transform duration-300 group-hover:scale-125" />, label: "Tailwind" },
+  { icon: <FaGithub className="text-gray-700 text-6xl transition-transform duration-300 group-hover:scale-125" />, label: "Git & GitHub" },
+  { icon: <FaJs className="text-yellow-400 text-6xl transition-transform duration-300 group-hover:scale-125" />, label: "JavaScript" },
+  { icon: <FaReact className="text-cyan-500 text-6xl transition-transform duration-300 group-hover:scale-125" />, label: "React" },
+  { icon: <SiMui className="text-cyan-500 text-6xl transition-transform duration-300 group-hover:scale-125" />, label: "Material React" },
+  { icon: <BiLogoRedux className="text-cyan-500 text-6xl transition-transform duration-300 group-hover:scale-125" />, label: "Redux" },
+  { icon: <IoLogoNodejs className="text-gray-700 text-6xl transition-transform duration-300 group-hover:scale-125" />, label: "Node Js" },
+  { icon: <BiLogoMongodb className="text-gray-700 text-6xl transition-transform duration-300 group-hover:scale-125" />, label: "MongoDB" },
+  { icon: <FaServer className="text-purple-500 text-6xl transition-transform duration-300 group-hover:scale-125" />, label: "Deployment" },
+];
 
 export const projectSyllabus = [
-    {
-        title: "Expense Tracker",
-        thumbnail: expenseTracker,  // Replace with your actual image path
-        overview: "A personal finance tracker to monitor income and expenses.",
-        outcomes: [
-            "React state with useState and useEffect",
-            "Form handling and validation",
-            "Conditional rendering",
-            "Calculating totals (income, expense, balance)",
-            "LocalStorage or backend integration"
-        ],
-        features: [
-            "Add income/expenses",
-            "Show transaction history",
-            "Display total balance",
-            "Delete a transaction"
-        ],
-        tools: ["React", "Tailwind CSS", "LocalStorage", "Express", "MongoDB"]
-    },
-    {
-        title: "Quiz App",
-        thumbnail: quiz,
-        overview: "An interactive quiz game with multiple choice questions.",
-        outcomes: [
-            "Routing with React Router",
-            "Component-driven architecture",
-            "State and props usage",
-            "Score calculation",
-            "Conditional page rendering"
-        ],
-        features: [
-            "Home, Quiz, Result pages",
-            "One question at a time",
-            "Final score display",
-            "API integration (optional)"
-        ],
-        tools: ["React", "React Router", "Tailwind CSS"]
-    },
-    {
-        title: "To-Do Application",
-        thumbnail: todo,
-        overview: "A classic CRUD app to manage daily tasks.",
-        outcomes: [
-            "Controlled form inputs",
-            "CRUD functionality with state",
-            "Filtering and searching tasks",
-            "Persisting data"
-        ],
-        features: [
-            "Add, edit, delete tasks",
-            "Mark as completed",
-            "Filter by status"
-        ],
-        tools: ["React", "Tailwind CSS", "LocalStorage", "Node.js (optional)"]
-    },
-    {
-        title: "E-commerce App",
-        thumbnail: ecommerce,
-        overview: "A minimal e-commerce frontend with product listings and cart.",
-        outcomes: [
-            "Routing and dynamic pages",
-            "Global state with Context or Redux",
-            "Cart management logic",
-            "Component reuse"
-        ],
-        features: [
-            "Product list and detail pages",
-            "Add to/remove from cart",
-            "Cart page with total price",
-            "Product filters (optional)"
-        ],
-        tools: [
-            "React",
-            "React Router",
-            "Context API or Redux",
-            "Tailwind CSS"
-        ]
-    },
-    {
-        title: "Employee Management App",
-        thumbnail: employee,
-        overview: "A CRUD app to manage employee records with backend integration.",
-        outcomes: [
-            "Full CRUD with backend API",
-            "API calls with Axios or Fetch",
-            "Error handling in forms",
-            "UI tables and modals"
-        ],
-        features: [
-            "Add/update/delete employee",
-            "Employee list with search/filter",
-            "Optional pagination"
-        ],
-        tools: ["React", "Axios", "Express.js", "MongoDB", "Tailwind CSS"]
-    }
+  {
+    title: "Expense Tracker",
+    thumbnail: expenseTracker,  // Replace with your actual image path
+    overview: "A personal finance tracker to monitor income and expenses.",
+    outcomes: [
+      "React state with useState and useEffect",
+      "Form handling and validation",
+      "Conditional rendering",
+      "Calculating totals (income, expense, balance)",
+      "LocalStorage or backend integration"
+    ],
+    features: [
+      "Add income/expenses",
+      "Show transaction history",
+      "Display total balance",
+      "Delete a transaction"
+    ],
+    tools: ["React", "Tailwind CSS", "LocalStorage", "Express", "MongoDB"]
+  },
+  {
+    title: "Quiz App",
+    thumbnail: quiz,
+    overview: "An interactive quiz game with multiple choice questions.",
+    outcomes: [
+      "Routing with React Router",
+      "Component-driven architecture",
+      "State and props usage",
+      "Score calculation",
+      "Conditional page rendering"
+    ],
+    features: [
+      "Home, Quiz, Result pages",
+      "One question at a time",
+      "Final score display",
+      "API integration (optional)"
+    ],
+    tools: ["React", "React Router", "Tailwind CSS"]
+  },
+  {
+    title: "To-Do Application",
+    thumbnail: todo,
+    overview: "A classic CRUD app to manage daily tasks.",
+    outcomes: [
+      "Controlled form inputs",
+      "CRUD functionality with state",
+      "Filtering and searching tasks",
+      "Persisting data"
+    ],
+    features: [
+      "Add, edit, delete tasks",
+      "Mark as completed",
+      "Filter by status"
+    ],
+    tools: ["React", "Tailwind CSS", "LocalStorage", "Node.js (optional)"]
+  },
+  {
+    title: "E-commerce App",
+    thumbnail: ecommerce,
+    overview: "A minimal e-commerce frontend with product listings and cart.",
+    outcomes: [
+      "Routing and dynamic pages",
+      "Global state with Context or Redux",
+      "Cart management logic",
+      "Component reuse"
+    ],
+    features: [
+      "Product list and detail pages",
+      "Add to/remove from cart",
+      "Cart page with total price",
+      "Product filters (optional)"
+    ],
+    tools: [
+      "React",
+      "React Router",
+      "Context API or Redux",
+      "Tailwind CSS"
+    ]
+  },
+  {
+    title: "Employee Management App",
+    thumbnail: employee,
+    overview: "A CRUD app to manage employee records with backend integration.",
+    outcomes: [
+      "Full CRUD with backend API",
+      "API calls with Axios or Fetch",
+      "Error handling in forms",
+      "UI tables and modals"
+    ],
+    features: [
+      "Add/update/delete employee",
+      "Employee list with search/filter",
+      "Optional pagination"
+    ],
+    tools: ["React", "Axios", "Express.js", "MongoDB", "Tailwind CSS"]
+  }
 ];
 
 
-export  const audience = [
-    {
-      icon: <FaUserGraduate className="text-indigo-500 text-5xl group-hover:scale-110 transition-transform duration-300" />,
-      title: "সম্পূর্ণ নতুনদের জন্য",
-      description: `কোডিং সম্পর্কে একদমই কিছু জানেন না? চিন্তার কিছু নেই! এই কোর্সে আপনি শিখবেন একদম শুরু থেকে ধাপে ধাপে — এমনভাবে যেন নিজেই বুঝতে পারেন, নিজেই করতে পারেন।`
-    },
-    {
-      icon: <FaLaptopCode className="text-green-500 text-5xl group-hover:scale-110 transition-transform duration-300" />,
-      title: "ফ্রিল্যান্সার হতে ইচ্ছুক?",
-      description: "প্র্যাকটিকাল ফ্রন্টএন্ড স্কিল শিখে ক্লায়েন্টদের জন্য ওয়েবসাইট তৈরি করুন এবং আপনার ইনকাম বাড়ান।"
-    },
-    {
-      icon: <FaGlobeAsia className="text-blue-500 text-5xl group-hover:scale-110 transition-transform duration-300" />,
-      title: "বাংলাভাষী শিক্ষার্থীদের জন্য",
-      description: "এই কোর্সটি তৈরি হয়েছে বিশেষভাবে বাংলাদেশের শিক্ষার্থীদের কথা মাথায় রেখে — যেন আপনি সহজ ভাষায়, স্বাচ্ছন্দ্যে শিখতে পারেন।"
-    }
-  ];
+export const audience = [
+  {
+    icon: <FaUserGraduate className="text-indigo-500 text-5xl group-hover:scale-110 transition-transform duration-300" />,
+    title: "সম্পূর্ণ নতুনদের জন্য",
+    description: `কোডিং সম্পর্কে একদমই কিছু জানেন না? চিন্তার কিছু নেই! এই কোর্সে আপনি শিখবেন একদম শুরু থেকে ধাপে ধাপে — এমনভাবে যেন নিজেই বুঝতে পারেন, নিজেই করতে পারেন।`
+  },
+  {
+    icon: <FaLaptopCode className="text-green-500 text-5xl group-hover:scale-110 transition-transform duration-300" />,
+    title: "ফ্রিল্যান্সার হতে ইচ্ছুক?",
+    description: "প্র্যাকটিকাল ফ্রন্টএন্ড স্কিল শিখে ক্লায়েন্টদের জন্য ওয়েবসাইট তৈরি করুন এবং আপনার ইনকাম বাড়ান।"
+  },
+  {
+    icon: <FaGlobeAsia className="text-blue-500 text-5xl group-hover:scale-110 transition-transform duration-300" />,
+    title: "বাংলাভাষী শিক্ষার্থীদের জন্য",
+    description: "এই কোর্সটি তৈরি হয়েছে বিশেষভাবে বাংলাদেশের শিক্ষার্থীদের কথা মাথায় রেখে — যেন আপনি সহজ ভাষায়, স্বাচ্ছন্দ্যে শিখতে পারেন।"
+  }
+];
+
+export const features = [
+  {
+    icon: <FaClock className="text-blue-600 text-4xl group-hover:scale-110 transition-transform duration-300" />,
+    title: "150 Days Duration",
+    description: "Structured over 150 days with weekly goals and checkpoints."
+  },
+  {
+    icon: <FaChalkboardTeacher className="text-yellow-500 text-4xl group-hover:scale-110 transition-transform duration-300" />,
+    title: "Live Sessions",
+    description: "Weekly Q&A and support sessions with the instructor."
+  },
+  {
+    icon: <FaProjectDiagram className="text-green-500 text-4xl group-hover:scale-110 transition-transform duration-300" />,
+    title: "Real Projects",
+    description: "Build real-world projects to strengthen your portfolio."
+  },
+
+  {
+    icon: <FaVideo className="text-purple-500 text-4xl group-hover:scale-110 transition-transform duration-300" />,
+    title: "Video Records",
+    description: "Engaging, beginner-friendly video records covering for live class practice."
+  },
+  {
+    icon: <FaHeadset className="text-indigo-500 text-4xl group-hover:scale-110 transition-transform duration-300" />,
+    title: "Support Sessions",
+    description: "Get help via community Facebook & WhatsApp group."
+  },
+  {
+    icon: <FaInfinity className="text-pink-500 text-4xl group-hover:scale-110 transition-transform duration-300" />,
+    title: "Lifetime Access",
+    description: "Come back and review the course anytime, forever."
+  },
+  {
+    icon: <FaCertificate className="text-red-500 text-4xl group-hover:scale-110 transition-transform duration-300" />,
+    title: "Certificate of Completion",
+    description: "Receive a professional certificate after finishing the course."
+  },
+
+];

@@ -13,7 +13,7 @@ export default function CourseFeatures() {
             </h2>
             <p className="text-sm md:text-lg color-accent mx-2">
                 এই কোর্সে রয়েছে সফলতার জন্য প্রয়োজনীয় সব উপাদান —
-                সু-সংগঠিত লেসন, হাতে-কলমে প্রজেক্ট, আজীবন কোর্স অ্যাক্সেস,
+             <br className="hidden md:block" />   সু-সংগঠিত লেসন, হাতে-কলমে প্রজেক্ট, আজীবন কোর্স অ্যাক্সেস,
                 এবং শিক্ষার্থী কমিউনিটির সহায়তা — সবকিছু এক জায়গায়।
             </p>
             <div className="py-8 md:py-16">

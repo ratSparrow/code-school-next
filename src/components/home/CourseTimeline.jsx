@@ -8,18 +8,19 @@ const CourseTimeline = () => {
     return (
         <Fragment>
 
-            <section id="timeline" className="">
-                <h2 className="text-3xl md:text-5xl font-extrabold text-gray-800 mb-6 text-center pt-16">
+            <section id="timeline" className="text-center mx-2 py-0 md:py-8">
+                <h2 className="text-2xl md:text-4xl font-bold mb-2 md:mb-4 pt-4 md:pt-8 gradient-text-primary">
                     কোর্স টাইমলাইন
                 </h2>
-                <p className="text-lg md:text-xl text-gray-600 mb-12 max-w-2xl mx-auto pb-8 text-center">
+                <p className="text-sm md:text-lg color-accent">
                     আপনার স্কিল ডেভেলপমেন্টের জন্য ধাপে ধাপে সাজানো ২১ সপ্তাহের পূর্ণাঙ্গ পরিকল্পনা —
-                    প্রতি সপ্তাহে ৩টি ক্লাসে শিখবেন ওয়েব ডেভেলপমেন্টের মূল বিষয়গুলো, হাতে-কলমে প্রজেক্টসহ।
+                    <br className="hidden md:block"/>প্রতি সপ্তাহে ৩টি ক্লাসে শিখবেন ওয়েব ডেভেলপমেন্টের মূল বিষয়গুলো, হাতে-কলমে প্রজেক্টসহ।
                 </p>
-                <div className="max-w-5xl mx-auto h-[300px] md:h-[650px] overflow-y-auto">
+                <div className="w-full md:w-[1400px] mx-auto h-[500px] md:h-[700px] overflow-y-auto py-8 md:py-16">
                     <Chrono
+                        disableToolbar={true}
                         items={courseCurriculum}
-                        mode="VERTICAL"
+                        mode="VERTICAL_ALTERNATING"
                         theme={{
                             primary: "#FB923C",         // Timeline line
                             secondary: "#FFFFFF",       // Dot color

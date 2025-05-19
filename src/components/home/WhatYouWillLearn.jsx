@@ -9,7 +9,7 @@ export default function WhatYouWillLearn() {
 
     return (
         <section id="whatyoulearn" className="text-center mx-2 py-0 md:py-8">
-            <h2 className="text-2xl md:text-4xl font-bold mb-2 md:mb-4 pt-0 md:pt-8 gradient-text-primary">
+            <h2 className="text-2xl md:text-4xl font-bold mb-2 md:mb-4 pt-4 md:pt-8 gradient-text-primary">
                 আপনি যা শিখবেন
             </h2>
             <p className="text-sm md:text-lg color-accent ">

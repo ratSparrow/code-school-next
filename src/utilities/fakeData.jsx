@@ -4,7 +4,7 @@ import employee from "../assets/images/projects/employee-management.png"
 import quiz from "../assets/images/projects/quiz.png"
 import todo from "../assets/images/projects/todo.png"
 import { BiLogoMongodb, BiLogoRedux } from "react-icons/bi";
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaGithub, FaServer, FaSass } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaGithub, FaServer, FaSass, FaUserGraduate, FaLaptopCode, FaGlobeAsia } from "react-icons/fa";
 import { IoLogoNodejs } from "react-icons/io";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiMui } from "react-icons/si";
@@ -252,3 +252,22 @@ export const projectSyllabus = [
         tools: ["React", "Axios", "Express.js", "MongoDB", "Tailwind CSS"]
     }
 ];
+
+
+export  const audience = [
+    {
+      icon: <FaUserGraduate className="text-indigo-500 text-5xl group-hover:scale-110 transition-transform duration-300" />,
+      title: "সম্পূর্ণ নতুনদের জন্য",
+      description: `কোডিং সম্পর্কে একদমই কিছু জানেন না? চিন্তার কিছু নেই! এই কোর্সে আপনি শিখবেন একদম শুরু থেকে ধাপে ধাপে — এমনভাবে যেন নিজেই বুঝতে পারেন, নিজেই করতে পারেন।`
+    },
+    {
+      icon: <FaLaptopCode className="text-green-500 text-5xl group-hover:scale-110 transition-transform duration-300" />,
+      title: "ফ্রিল্যান্সার হতে ইচ্ছুক?",
+      description: "প্র্যাকটিকাল ফ্রন্টএন্ড স্কিল শিখে ক্লায়েন্টদের জন্য ওয়েবসাইট তৈরি করুন এবং আপনার ইনকাম বাড়ান।"
+    },
+    {
+      icon: <FaGlobeAsia className="text-blue-500 text-5xl group-hover:scale-110 transition-transform duration-300" />,
+      title: "বাংলাভাষী শিক্ষার্থীদের জন্য",
+      description: "এই কোর্সটি তৈরি হয়েছে বিশেষভাবে বাংলাদেশের শিক্ষার্থীদের কথা মাথায় রেখে — যেন আপনি সহজ ভাষায়, স্বাচ্ছন্দ্যে শিখতে পারেন।"
+    }
+  ];

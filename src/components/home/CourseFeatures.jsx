@@ -19,7 +19,7 @@ export default function CourseFeatures() {
             <div className="py-8 md:py-16">
                 <Slider {...courseFeatureSettings}>
                     {features.map((feature, index) => (
-                        <div key={index} className="px-2">
+                        <div key={index} className="">
                             <div className="bg-blue-50 rounded-2xl shadow-lg p-8 hover:shadow-2xl transition-all duration-300 border border-blue-100 hover:border-blue-300 h-[200px]">
                                 <div className="mb-4 flex justify-center">
                                     {feature.icon}

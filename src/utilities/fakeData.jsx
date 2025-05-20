@@ -4,7 +4,7 @@ import employee from "../assets/images/projects/employee-management.png"
 import quiz from "../assets/images/projects/quiz.png"
 import todo from "../assets/images/projects/todo.png"
 import { BiLogoMongodb, BiLogoRedux } from "react-icons/bi";
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaGithub, FaServer, FaSass, FaUserGraduate, FaLaptopCode, FaGlobeAsia } from "react-icons/fa";
+import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaGithub, FaServer, FaSass, FaUserGraduate, FaLaptopCode, FaGlobeAsia, FaCode, FaBriefcase } from "react-icons/fa";
 import { IoLogoNodejs } from "react-icons/io";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiMui } from "react-icons/si";
@@ -255,7 +255,8 @@ export const projectSyllabus = [
 ];
 
 
-export const audience = [
+
+export const audienceData = [
   {
     icon: <FaUserGraduate className="text-indigo-500 text-5xl group-hover:scale-110 transition-transform duration-300" />,
     title: "সম্পূর্ণ নতুনদের জন্য",
@@ -263,15 +264,31 @@ export const audience = [
   },
   {
     icon: <FaLaptopCode className="text-green-500 text-5xl group-hover:scale-110 transition-transform duration-300" />,
-    title: "ফ্রিল্যান্সার হতে ইচ্ছুক?",
+    title: "ফ্রিল্যান্সার হতে ইচ্ছুক",
     description: "প্র্যাকটিকাল ফ্রন্টএন্ড স্কিল শিখে ক্লায়েন্টদের জন্য ওয়েবসাইট তৈরি করুন এবং আপনার ইনকাম বাড়ান।"
   },
   {
     icon: <FaGlobeAsia className="text-blue-500 text-5xl group-hover:scale-110 transition-transform duration-300" />,
     title: "বাংলাভাষী শিক্ষার্থীদের জন্য",
     description: "এই কোর্সটি তৈরি হয়েছে বিশেষভাবে বাংলাদেশের শিক্ষার্থীদের কথা মাথায় রেখে — যেন আপনি সহজ ভাষায়, স্বাচ্ছন্দ্যে শিখতে পারেন।"
+  },
+  {
+    icon: <FaCode className="text-rose-500 text-5xl group-hover:scale-110 transition-transform duration-300" />,
+    title: "স্কিল হ্যাক করতে চান যারা",
+    description: "যারা শুধু সার্টিফিকেট নয়, বাস্তব প্রজেক্ট বানিয়ে বাস্তব কাজ শিখতে চান — এই কোর্স তাদের জন্য।"
+  },
+  {
+    icon: <FaBriefcase className="text-yellow-500 text-5xl group-hover:scale-110 transition-transform duration-300" />,
+    title: "চাকরির প্রস্তুতি নিতে চান",
+    description: "ফ্রন্টএন্ড ডেভেলপমেন্ট শিখে আপনি জব মার্কেটের জন্য নিজেকে প্রস্তুত করতে পারবেন বাস্তব প্রজেক্ট ও স্কিল দিয়ে।"
+  },
+  {
+    icon: <FaChalkboardTeacher className="text-purple-500 text-5xl group-hover:scale-110 transition-transform duration-300" />,
+    title: "নিজেই শেখাতে চান বা কমিউনিটিতে কন্ট্রিবিউট করতে চান",
+    description: "শুধু শেখার জন্য নয়, শেখানোর জন্যও! যারা অন্যদের শেখাতে চান, তাদের জন্য দারুণ ভিত্তি তৈরি হবে এই কোর্সে।"
   }
 ];
+
 
 export const features = [
   {

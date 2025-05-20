@@ -36,3 +36,10 @@
     background: $secondary-gradient;
     color: $color4;
 }
+
+@media screen and (max-width: 400px) {
+    .secondary-gradient-background {
+        background: $secondary-gradient;
+        color: $heading-color;
+    }
+}

@@ -19,7 +19,7 @@ export default function InstructorSection() {
           <h3 className="text-xl md:text-2xl color-accent mb-2">রাফিউল আলম তন্ময়</h3>
           <h3 className="text-xl md:text-2xl color-accent mb-2">সফটওয়্যার ইঞ্জিনিয়ার ও প্রোগ্রামিং প্রশিক্ষক</h3>
           <div className="flex items-center gap-4">
-            <a href="https://facebook.com/yourprofile" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.facebook.com/ratsblackpearl/" target="_blank" rel="noopener noreferrer">
               <FaFacebook className="text-blue-600 text-2xl hover:scale-110 transition-transform" />
             </a>
             <a href="https://www.linkedin.com/in/rafiulalam07/" target="_blank" rel="noopener noreferrer">

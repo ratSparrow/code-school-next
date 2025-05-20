@@ -72,8 +72,8 @@ export default function Navbar() {
 
             {/* Mobile Menu */}
             {isOpen && (
-                <div className="md:hidden bg-white shadow-md">
-                    <div className="px-2 pt-2 pb-3 space-y-1">
+                <div className="md:hidden ">
+                    <div className="px-2 pt-2 pb-3 space-y-1 ">
                         {renderLink("/", "হোম")}
                         {renderAnchors("#whatyoulearn", "আপনি যা শিখবেন")}
                         {renderAnchors("#whoisfor", "এই কোর্স কার জন্য")}
